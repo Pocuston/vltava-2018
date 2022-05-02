@@ -1,0 +1,20 @@
+# The following types define the data model of the example service
+# based on which the GraphQL API is generated
+
+type Section @model {
+  id: ID! @isUnique
+  order: Int!
+  name: String!
+  carRoute: String!
+  runnerRoute: String! @migrationValue(value: "No runner route yet"),
+  proposition: String! @migrationValue(value: "No proposition yet"),
+  runner: String!
+  plannedTime: Int!,
+  realTime: Int,
+}
+
+type Scalars @model {
+  id: ID! @isUnique
+  name: String!
+  value: String
+}

@@ -1,0 +1,5 @@
+client/elm-stuff/**
+client/index.html
+client/index.js
+
+server/.graphcoolrc

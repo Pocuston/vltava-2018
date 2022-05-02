@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+
+  proxy:
+    image: nginx
+    volumes:
+      - ./proxy/nginx.conf:/etc/nginx/template.conf
+    ports: 
+      - 80:80
+    command: /bin/bash -c "envsubst < /etc/nginx/template.conf > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
+

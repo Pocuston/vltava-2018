@@ -1,0 +1,401 @@
+# Try to write your query here
+mutation {
+  startTime: createScalars(name: "startTime", value: null) {
+    id
+  }
+  currentSection: createScalars(name: "currentSection", value: null) {
+    id
+  }
+  s1: createSection(
+    name: "1. Zadov" 
+    order: 1
+    runner: "Honza"
+    runnerRoute: "https://mapy.cz/s/2lB63"
+    carRoute: "https://mapy.cz/s/2mO5m"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_1.pdf"
+    plannedTime: 3000000) {
+    id
+  }
+  s2: createSection(
+    name: "2. Lipka"
+    order: 2
+    runner: "Tomáš Kubů"
+    runnerRoute: "https://mapy.cz/s/2lBeB"
+    carRoute: "https://mapy.cz/s/2mO6U"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_2.pdf"
+    plannedTime: 2280000
+  ) {
+    id
+  }
+  s3: createSection(
+    name: "3. Kubova Huť"
+    order: 3
+    runner: "Miloš"
+    runnerRoute: "https://mapy.cz/s/2lBm7"
+    carRoute: "https://mapy.cz/s/2mObG"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_3.pdf"
+    plannedTime: 2340000
+  ) {
+    id
+  }
+  s4: createSection(
+    name: "4. Lenora"
+    order: 4
+    runner: "Lenka"
+    runnerRoute: "https://mapy.cz/s/2lBok"
+    carRoute: "https://mapy.cz/s/2mOcw"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_4.pdf"
+    plannedTime: 2940000) {
+    id
+  }
+  s5: createSection(
+    name: "5. Stožec"
+    order: 5
+    runner: "Kuba"
+    runnerRoute: "https://mapy.cz/s/2lBpH"
+    carRoute: "https://mapy.cz/s/2mOdi"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_5.pdf"
+    plannedTime: 4440000) {
+    id
+  }
+  s6: createSection(
+    name: "6. Nová pec"
+    order: 6
+    runner: "Zdenda"
+    runnerRoute: "https://mapy.cz/s/2mNSw"
+    carRoute: "https://mapy.cz/s/1umLE"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_6.pdf"
+    plannedTime: 2160000
+  ) {
+    id
+  }
+  s7: createSection(
+    name: "7. Horní planá"
+    order: 7
+    runner: "Marcela"
+    runnerRoute: "https://mapy.cz/s/2lBsm"
+    carRoute: "https://mapy.cz/s/1umR6"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_7.pdf"
+    plannedTime: 3240000
+  ) {
+    id
+  }
+  s8: createSection(
+    name: "8. Olšina" 
+    order: 8
+    runner: "Aleš"
+    runnerRoute: "https://mapy.cz/s/2lBvO"
+    carRoute: "https://mapy.cz/s/1umSd"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_8.pdf"
+    plannedTime: 2040000
+    ) {
+    id
+  }
+  s9: createSection(
+    name: "9. Černá v pošumaví"
+    order: 9
+    runner: "Bohouš"
+    runnerRoute: "https://mapy.cz/s/2lByB"
+    carRoute: "https://mapy.cz/s/2mOet"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_9.pdf"
+    plannedTime: 3120000
+  ) {
+    id
+  }
+  s10: createSection(
+    name: "10. Vřesná"
+    order: 10
+    runner: "Tomáš S."
+    runnerRoute: "https://mapy.cz/s/2lKiZ"
+    carRoute: "https://mapy.cz/s/2mOfO"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_10.pdf"
+    plannedTime: 2580000
+  ) {
+    id
+  }
+  s11: createSection(
+    name: "11. Lipno nad Vltavou"
+    order: 11
+    runner: "Petr"
+    runnerRoute: "https://mapy.cz/s/2lKkJ"
+    carRoute: "https://mapy.cz/s/2mOgU"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_11.pdf"
+    plannedTime: 3120000
+  ) {
+    id
+  }
+  s12: createSection(
+    name: "12. Vyšší Brod"
+    order: 12
+    runner: "Ondra"
+    runnerRoute: "https://mapy.cz/s/2AxyC"
+    carRoute: "https://mapy.cz/s/2Axxq"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_12.pdf"
+    plannedTime: 1680000
+  ) {
+    id
+  }
+  s13: createSection(
+    name: "13. Rožmberk"
+    order: 13
+    runner: "Honza"
+    runnerRoute: "https://mapy.cz/s/2BCQ5"
+    carRoute: "https://mapy.cz/s/2AxAg"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_13.pdf"
+    plannedTime: 2100000
+  ) {
+    id
+  }
+  s14: createSection(
+    name: "14. Rožmitál na Šumavě"
+    order: 14
+    runner: "Tomáš Kubů"
+    runnerRoute: "https://mapy.cz/s/2mM1s"
+    carRoute: "https://mapy.cz/s/2AxWV"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_14.pdf"
+    plannedTime: 2280000
+  ) {
+    id
+  }
+  s15: createSection(
+    name: "15. Věžová Pláně"
+    order: 15
+    runner: "Miloš"
+    runnerRoute: "https://mapy.cz/s/2mM6j"
+    carRoute: "https://mapy.cz/s/1us1P"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_15.pdf"
+    plannedTime: 3120000
+  ) {
+    id
+  }
+  s16: createSection(
+    name: "16. Zlatá Koruna"
+    order: 16
+    runner: "Kuba"
+    runnerRoute: "https://mapy.cz/s/2lKsX"
+    carRoute: "https://mapy.cz/s/1us2x"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_16.pdf"
+    plannedTime: 2820000
+  ) {
+    id
+  }
+  s17: createSection(
+    name: "17. Boršov"
+    order: 17
+    runner: "Boršov"
+    runnerRoute: "https://mapy.cz/s/2Cs8i"
+    carRoute: "https://mapy.cz/s/1us2V"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_17.pdf"
+    plannedTime: 3240000
+  ) {
+    id
+  }
+  s18: createSection(
+    name: "18. České Budějovice"
+    order: 18
+    runner: "Zdenda"
+    runnerRoute: "https://mapy.cz/s/2lBm7"
+    carRoute: "https://mapy.cz/s/2mObG"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_3.pdf"
+    plannedTime: 2760000
+  ) {
+    id
+  }
+  s19: createSection(
+    name: "19. Hluboká"
+    order: 19
+    runner: "Tomáš"
+    runnerRoute: "https://mapy.cz/s/2BX0z"
+    carRoute: "https://mapy.cz/s/2mOmL"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_19.pdf"
+    plannedTime: 3120000
+  ) {
+    id
+  }
+  s20: createSection(
+    name: "20. Purkavec"
+    order: 20
+    runner: "Bohouš"
+    runnerRoute: "https://mapy.cz/s/2mNVq"
+    carRoute: "https://mapy.cz/s/2CAsx"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_20.pdf"
+    plannedTime: 2940000
+  ) {
+    id
+  }
+  s21: createSection(
+    name: "21. Hněvkovice Zámek"
+    order: 21
+    runner: "Aleš"
+    runnerRoute: "https://mapy.cz/s/2mNVX"
+    carRoute: "https://mapy.cz/s/1us75"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_21.pdf"
+    plannedTime: 2520000
+  ) {
+    id
+  }
+  s22: createSection(
+    name: "22. Koloděje nad Lužnicí"
+    order: 22
+    runner: "Ondra"
+    runnerRoute: "https://mapy.cz/s/2lL60"
+    carRoute: "https://mapy.cz/s/2mOoI"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_22.pdf"
+    plannedTime: 3720000
+  ) {
+    id
+  }
+  s23: createSection(
+    name: "23. Slabčice"
+    order: 23
+    runner: "Marcela"
+    runnerRoute: "https://mapy.cz/s/2lLa0"
+    carRoute: "https://mapy.cz/s/2CRb2"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_23.pdf"
+    plannedTime: 2760000
+  ) {
+    id
+  }
+  s24: createSection(
+    name: "24. Jetětice"
+    order: 24
+    runner: "Petr"
+    runnerRoute: "https://mapy.cz/s/2mNWR"
+    carRoute: "https://mapy.cz/s/2mOpH"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_24.pdf"
+    plannedTime: 3000000
+  ) {
+    id
+  }
+  s25: createSection(
+    name: "25. Květov"
+    order: 25
+    runner: "Tomáš Kubů"
+    runnerRoute: "https://mapy.cz/s/2lLmh"
+    carRoute: "https://mapy.cz/s/2CAuk"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_25.pdf"
+    plannedTime: 2700000
+  ) {
+    id
+  }
+  s26: createSection(
+    name: "26. Kostelec n. Vltavou"
+    order: 26
+    runner: "Miloš"
+    runnerRoute: "https://mapy.cz/s/2lLmV"
+    carRoute: "https://mapy.cz/s/2AxFq"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_26.pdf"
+    plannedTime: 2220000
+  ) {
+    id
+  }
+  s27: createSection(
+    name: "27. Klučenice"
+    order: 27
+    runner: "Zdeněk"
+    runnerRoute: "https://mapy.cz/s/2mM7A"
+    carRoute: "https://mapy.cz/s/2mOs7"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_27.pdf"
+    plannedTime: 2520000
+  ) {
+    id
+  }
+  s28: createSection(
+    name: "28. Solenice"
+    order: 28
+    runner: "Honza"
+    runnerRoute: "https://mapy.cz/s/vWk3"
+    carRoute: "https://mapy.cz/s/2mOsC"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_28.pdf"
+    plannedTime: 2520000
+  ) {
+    id
+  }
+  s29: createSection(
+    name: "29. Kamýk n. Vltavou"
+    order: 29
+    runner: "Lenka"
+    runnerRoute: "https://mapy.cz/s/2mNYa"
+    carRoute: "https://mapy.cz/s/2AxKX"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_29.pdf"
+    plannedTime: 3180000
+  ) {
+    id
+  }
+  s30: createSection(
+    name: "30. Líchovy"
+    order: 30
+    runner: "Kuba"
+    runnerRoute: "https://mapy.cz/s/2mNYz"
+    carRoute: "https://mapy.cz/s/2mOuL"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_30.pdf"
+    plannedTime: 3300000
+  ) {
+    id
+  }
+  s31: createSection(
+    name: "31. Štola Josef"
+    order: 31
+    runner: "Bohouš"
+    runnerRoute: "https://mapy.cz/s/2mMec"
+    carRoute: "https://mapy.cz/s/2mOvA"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_31.pdf"
+    plannedTime: 2880000
+  ) {
+    id
+  }
+  s32: createSection(
+    name: "32. Živohošť"
+    order: 32
+    runner: "Marcela"
+    runnerRoute: "https://mapy.cz/s/2oluc"
+    carRoute: "https://mapy.cz/s/2mOwv"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_32.pdf"
+    plannedTime: 3900000
+  ) {
+    id
+  }
+  s33: createSection(
+    name: "33. Třebenice"
+    order: 33
+    runner: "Ondra"
+    runnerRoute: "https://mapy.cz/s/2mMn9"
+    carRoute: "https://mapy.cz/s/2mOxa"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_33.pdf"
+    plannedTime: 1980000
+  ) {
+    id
+  }
+  s34: createSection(
+    name: "34. Hradišťko"
+    order: 34
+    runner: "Aleš"
+    runnerRoute: "https://mapy.cz/s/vZb4"
+    carRoute: "https://mapy.cz/s/2CR12"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_34.pdf"
+    plannedTime: 1500000
+  ) {
+    id
+  }
+  s35: createSection(
+    name: "35. Davle"
+    order: 35
+    runner: "Petr"
+    runnerRoute: "https://mapy.cz/s/2mMq7"
+    carRoute: "https://mapy.cz/s/2CKQ1"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_35.pdf"
+    plannedTime: 2340000) {
+    id
+  }
+  s36: createSection(
+    name: "36. Vrané n. Vltavou"
+    order: 36
+    runner: "Tomáš S."
+    runnerRoute: "https://mapy.cz/s/27f3N"
+    carRoute: "https://mapy.cz/s/2mOzj"
+    proposition: "https://vltavarun.cz/downloads/Propozice_2018_36.pdf"
+    plannedTime: 2880000
+  ) {
+    id
+  }
+}

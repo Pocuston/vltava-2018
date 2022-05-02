@@ -1,0 +1,63 @@
+query {
+  allSections {
+    id
+    order
+    name
+    runner
+    plannedTime
+    realTime
+  }
+  allScalarses {
+    id
+    name
+    value
+  }
+}
+
+mutation {
+  startTime: createScalars(name: "startTime", value: null) {
+    id
+  }
+  currentSection: createScalars(name: "currentSection", value: null) {
+    id
+  }
+}
+
+mutation {
+  deleteScalars(id: "cjgpcobgy002r0138rn0eymg7") {
+    id
+  }
+}
+
+mutation {
+  updateSection(id: "cjgm33hcl00m90138yuoirr3a", realTime: 0) {
+    id
+  }
+}
+
+query {
+  allSections {
+    id
+    name
+    runner
+    plannedTime
+    realTime
+  }
+  allScalarses {
+    id
+    name
+    value
+  }
+}
+
+mutation {
+  updateSection: updateSection(id: "cjgm33hcl00m90138yuoirr3a", realTime: 0) {
+    id
+  }
+  updateScalars: updateScalars(
+    id: "cjgpcs0we002z0138wweu88fb"
+    value: "cjgm33hcl00m90138yuoirr3a"
+  ) {
+    id
+  }
+}
